@@ -27,6 +27,7 @@ try:
   print(green+"verified!")
   print("")
   password=input("ENTER PASSWORD LIST: ")
+  print("")
   print(cyan+"please wait...")
   time.sleep(5)
   print("\n")
@@ -40,8 +41,8 @@ try:
       break
     except smtplib.SMTPAuthenticationError:
       print(yellow+bold+"PASSWORD INCORRECT<====> %s" % password)
-      os.system("toilet Not Found")
-      os.system("figlet Try Again Bro")
-      print(cyan+"\t\t\tThank You\n\n")
+  os.system("toilet Not Found")
+  os.system("figlet Try Again Bro")
+  print(cyan+"\t\t\tThank You\n\n")
 except Exception:
   print(red+bold+"\t\tSOMETHING WRONG!!!")
